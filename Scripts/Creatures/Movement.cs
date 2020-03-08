@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     public Transform target;
     public Animator anim;
     public int moveSpeed;
-    public bool followOrder;
+    public bool followOrder = false;
     private Rigidbody2D myRigidbody;
 
     void Start()
@@ -17,22 +17,18 @@ public class Movement : MonoBehaviour
         anim = GetComponent<Animator>();
     }
     void Update(){
+        if (followOrder) {
+            FollowPlayer();
+        }  
         if (Input.GetKeyDown(KeyCode.J)) {
             followOrder = true;
         }
-        if (followOrder) {
-            FollowPlayer();
-        }       
-    }
-    void FixedUpdate()
-    {
-        // if (Input.GetKeyDown(KeyCode.J)) {
-        //     Debug.Log("pressed button");
-        //     FollowPlayer();
-        // }
+        if (Input.GetKeyDown(KeyCode.K)) {
+            followOrder = false;
+        }
     }
     void FollowPlayer() {
-        Vector3 temp = Vector3.MoveTowards(transform.position, target.position, 3 * Time.deltaTime);
+        Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
         myRigidbody.MovePosition(temp);
     }
     void changeAnim(Vector2 direction) {
