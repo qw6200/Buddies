@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Movement : MonoBehaviour
 {
     public Transform target;
     public Animator anim;
     public int moveSpeed;
+    public int closeDist;
     public bool followOrder = false;
     private Rigidbody2D myRigidbody;
 
@@ -29,10 +31,14 @@ public class Movement : MonoBehaviour
         }
     }
     void FollowPlayer() {
-        Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-        changeAnim(temp - transform.position);
-        myRigidbody.MovePosition(temp);
-        anim.SetBool("moving", true);
+        if (Vector3.Distance(transform.position, target.position) > closeDist) {
+            Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            changeAnim(temp - transform.position);
+            myRigidbody.MovePosition(temp);
+            anim.SetBool("moving", true);
+        } else {
+            anim.SetBool("moving", false);
+        }
     }
     void changeAnim(Vector2 direction) {
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
