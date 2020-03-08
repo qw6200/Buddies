@@ -42,7 +42,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: b811d051cd094914fb0fd3cbd6a3c3a4, type: 3}
-    totalSpriteSurfaceArea: 1078219
+    totalSpriteSurfaceArea: 1090507
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -318,6 +318,18 @@ SpriteAtlas:
   - {fileID: 5566842953363755866, guid: d36c51fa7f5162a42a514b449797b953, type: 3}
   - {fileID: -7445369939883215787, guid: d36c51fa7f5162a42a514b449797b953, type: 3}
   - {fileID: 21300000, guid: 112eb0eb446575b44acc11e26f528769, type: 3}
+  - {fileID: -6061270533552233856, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: 8895666417122275894, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: 5546920029726030454, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: 1843416084281249438, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: -8671885708218050543, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: 8614707604485343980, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: -1440425237867597357, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: 7204378064330048357, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: 7842624481175806839, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: -4791196711613677977, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: 2577736958484365418, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
+  - {fileID: 7304843818933755932, guid: 4e5afb0fc4aa00e43ac41a15de7c7f26, type: 3}
   m_PackedSpriteNamesToIndex:
   - cave
   - Overworld
@@ -591,5 +603,17 @@ SpriteAtlas:
   - log_21
   - log_22
   - NPC_test
+  - Dog 01-1_10
+  - Dog 01-1_11
+  - Dog 01-1_7
+  - Dog 01-1_6
+  - Dog 01-1_5
+  - Dog 01-1_4
+  - Dog 01-1_3
+  - Dog 01-1_2
+  - Dog 01-1_1
+  - Dog 01-1_0
+  - Dog 01-1_9
+  - Dog 01-1_8
   m_Tag: sprite_atlas
   m_IsVariant: 0
