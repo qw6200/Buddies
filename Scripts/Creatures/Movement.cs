@@ -32,9 +32,20 @@ public class Movement : MonoBehaviour
     }
     void FollowPlayer() {
         if (Vector3.Distance(transform.position, target.position) > closeDist) {
-            Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-            changeAnim(temp - transform.position);
-            myRigidbody.MovePosition(temp);
+            Vector3 dest;
+            Vector3 creaturePos = transform.position;
+            Vector3 playerPos = target.position;
+
+            if (creaturePos.x > playerPos.x && creaturePos.y > playerPos.y) {
+                dest = new Vector3(playerPos.x + closeDist, playerPos.y + closeDist); 
+            } else if (creaturePos.x > playerPos.x && creaturePos.y < playerPos.y) {
+                dest = new Vector3(playerPos.x + closeDist, playerPos.y + closeDist); 
+            } else if (creaturePos.x > playerPos.x && creaturePos.y > playerPos.y) {
+                dest = new Vector3(playerPos.x + closeDist, playerPos.y + closeDist); 
+            }
+            Debug.Log(dest);
+            GetComponent<NavMeshAgent2D>().destination = dest;
+            changeAnim(dest - transform.position);
             anim.SetBool("moving", true);
         } else {
             anim.SetBool("moving", false);

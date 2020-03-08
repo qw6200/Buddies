@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 69002185}
   - component: {fileID: 69002186}
   - component: {fileID: 69002187}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Up Hitbox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -500,10 +500,10 @@ GameObject:
   - component: {fileID: 558369157}
   - component: {fileID: 558369158}
   - component: {fileID: 558369159}
-  - component: {fileID: 558369160}
   - component: {fileID: 558369162}
   - component: {fileID: 558369161}
-  m_Layer: 0
+  - component: {fileID: 558369160}
+  m_Layer: 8
   m_Name: Doge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,8 +630,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!60 &558369160
-PolygonCollider2D:
+--- !u!61 &558369160
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -643,7 +643,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0289284, y: -0.19285505}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -653,35 +653,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.055198666, y: 0.5844157}
-      - {x: -0.033788677, y: 0.47196114}
-      - {x: -0.25000027, y: 0.4556424}
-      - {x: -0.32648084, y: 0.3164659}
-      - {x: -0.46881402, y: -0.0991576}
-      - {x: -0.40842736, y: -0.52360666}
-      - {x: -0.3946413, y: -0.86537355}
-      - {x: -0.23626326, y: -0.8886909}
-      - {x: -0.097329274, y: -0.8836405}
-      - {x: -0.061122347, y: -0.663572}
-      - {x: 0.10636056, y: -0.65985405}
-      - {x: 0.16389164, y: -0.6785338}
-      - {x: 0.18001282, y: -0.8499554}
-      - {x: 0.31546864, y: -0.8782986}
-      - {x: 0.42075837, y: -0.8268574}
-      - {x: 0.40868485, y: -0.6477315}
-      - {x: 0.5265944, y: -0.2788448}
-      - {x: 0.43868336, y: 0.15847205}
-      - {x: 0.41824883, y: 0.12968744}
-      - {x: 0.50019395, y: -0.061338965}
-      - {x: 0.3555325, y: 0.3212343}
-      - {x: 0.26165143, y: 0.4754039}
-      - {x: 0.30611446, y: 0.5694198}
-      - {x: 0.34079278, y: 0.6941945}
-      - {x: 0.24176323, y: 0.83791727}
-      - {x: 0.067039214, y: 0.92873704}
-      - {x: -0.020749226, y: 0.84781367}
+  serializedVersion: 2
+  m_Size: {x: 0.9392946, y: 1.2478625}
+  m_EdgeRadius: 0
 --- !u!114 &558369161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,7 +735,7 @@ GameObject:
   - component: {fileID: 669758405}
   - component: {fileID: 669758410}
   - component: {fileID: 669758412}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1090,7 +1064,7 @@ GameObject:
   - component: {fileID: 969899828}
   - component: {fileID: 969899829}
   - component: {fileID: 969899830}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Down Hitbox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1215,7 +1189,7 @@ GameObject:
   - component: {fileID: 1198698994}
   - component: {fileID: 1198698995}
   - component: {fileID: 1198698996}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Right Hitbox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1387,7 +1361,7 @@ GameObject:
   - component: {fileID: 1832573027}
   - component: {fileID: 1832573028}
   - component: {fileID: 1832573029}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Left Hitbox
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1613,7 +1587,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 7.602437, y: -34.51779}
+  m_Offset: {x: 7.674618, y: -34.427567}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1624,7 +1598,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.876936, y: 5.0815277}
+  m_Size: {x: 6.6603947, y: 4.9010773}
   m_EdgeRadius: 0
 --- !u!1 &1906637291
 GameObject:
