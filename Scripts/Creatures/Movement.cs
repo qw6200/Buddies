@@ -25,11 +25,14 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.K)) {
             followOrder = false;
+            anim.SetBool("moving", false);
         }
     }
     void FollowPlayer() {
         Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        changeAnim(temp - transform.position);
         myRigidbody.MovePosition(temp);
+        anim.SetBool("moving", true);
     }
     void changeAnim(Vector2 direction) {
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
