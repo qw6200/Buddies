@@ -1266,38 +1266,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a03e99fc5adbcf45aa21206cf2707a0, type: 3}
---- !u!1 &1670343846 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 944907158675395440, guid: 4eedc834fc97aa24ab28006b41151a49,
-    type: 3}
-  m_PrefabInstance: {fileID: 944907158462870840}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1670343847
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670343846}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.009294987, y: -0.38981867}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 2, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.60573864, y: 0.13983917}
-  m_EdgeRadius: 0
 --- !u!1 &1832573025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,7 +1820,7 @@ PrefabInstance:
     - target: {fileID: 944907158675395432, guid: 4eedc834fc97aa24ab28006b41151a49,
         type: 3}
       propertyPath: thrust
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 944907158675395445, guid: 4eedc834fc97aa24ab28006b41151a49,
         type: 3}
@@ -1908,12 +1876,12 @@ PrefabInstance:
     - target: {fileID: 944907158675395447, guid: 4eedc834fc97aa24ab28006b41151a49,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.004313469
+      value: -0.01671791
       objectReference: {fileID: 0}
     - target: {fileID: 944907158675395447, guid: 4eedc834fc97aa24ab28006b41151a49,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.45280266
+      value: 0.6350708
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 944907158675395444, guid: 4eedc834fc97aa24ab28006b41151a49, type: 3}
